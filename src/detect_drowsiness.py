@@ -20,24 +20,12 @@ model = tf.keras.models.load_model(r"C:\Users\HP\OneDrive\Documents\Etc\OpenCV\D
 
 faceCascade = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_frontalface_alt2.xml")
 
-# eyeCascade = cv2.CascadeClassifier(r"C:\Users\HP\Downloads\haarcascade_eye.xml")
 
 
 
-
-
-
-
-# eyes = eyeCascade.detectMultiScale(gray, 1.1, minNeighbors=8) 
-
-
-# for (x,y,w,h) in eyes:
-#     cv2.rectangle(img, (x, y), (x+w, y+h), (0,255,0), 2)
-
-
-# plt.imshow(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
-# plt.show()
-
+# Eye cascade is not used because it becomes unreliable when eyes are closed or partially closed.
+# Instead, we detect the face and extract the eye region using proportional slicing.
+# This ensures consistent input to the model and improves stability of detection.
 
 
 
