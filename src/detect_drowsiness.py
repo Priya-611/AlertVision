@@ -16,7 +16,7 @@ import threading
 
 
 
-model = tf.keras.models.load_model(r"C:\Users\HP\OneDrive\Documents\Etc\OpenCV\Drowsiness Detection\model.h5")
+model = tf.keras.models.load_model("model/model.h5")
 
 faceCascade = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_frontalface_alt2.xml")
 
