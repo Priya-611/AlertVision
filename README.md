@@ -1,4 +1,4 @@
-# 🚗 DriveGuard AI – Driver Drowsiness Detection
+# 🚗 AlerVision AI – Driver Drowsiness Detection
 
 A real-time system that detects driver drowsiness using **OpenCV and Deep Learning (MobileNet)** and triggers an alert if the driver appears sleepy.
 
